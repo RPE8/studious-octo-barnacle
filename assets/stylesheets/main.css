@@ -46,3 +46,51 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.header {
+	height: 40px;
+	background-color: black;
+	color: white;
+}
+
+.header nav {
+	height: 100%;
+	display: inline-block;
+}
+
+.header li:last-child {
+	border-right: 1px solid white;
+}
+
+.header li:first-child {
+	border-left: none;
+}
+
+.header ul {
+	display: inline-block;
+	height: 100%;
+	font-size: 0;
+}
+
+.nav-item {
+	display: inline-block;
+	font-size: 16px;
+	border-left: 1px solid white;
+	padding: 12px 20px;
+	text-align: center;
+}
+
+.header input {
+	float: right;
+	width: 170px;
+}
+
+.nav-item.signin {
+	text-align: left;
+	width: 110px;
+}
+
+.nav-item.more {
+	width: 90px;
+	text-align: left;
+}
