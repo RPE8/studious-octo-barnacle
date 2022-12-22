@@ -47,6 +47,13 @@ table {
   border-spacing: 0;
 }
 
+
+
+
+a {
+	text-decoration: none;
+}
+
 .header {
 	height: 40px;
 	background-color: black;
@@ -58,16 +65,30 @@ table {
 	display: inline-block;
 }
 
-.header li:last-child {
+.nav-item:last-child {
 	border-right: 1px solid white;
 }
 
-.header li:first-child {
+.nav-item:first-child {
 	border-left: none;
+	padding: 0 20px;
+}
+
+.nav-item .logo {
+	position: relative;
+	top: 4px;
+}
+
+.logo > span{
+	background-color: white;
+	color: black;
+	font-size: 30px;
+	padding: 0 5px;
 }
 
 .header ul {
 	display: inline-block;
+	position: relative;
 	height: 100%;
 	font-size: 0;
 }
@@ -83,6 +104,9 @@ table {
 .header input {
 	float: right;
 	width: 170px;
+	margin-top: 6px;
+	margin-right: 10px;
+	height: 20px;
 }
 
 .nav-item.signin {
