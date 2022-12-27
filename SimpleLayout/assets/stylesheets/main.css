@@ -1,0 +1,91 @@
+body {
+	background-color: lightblue;
+}
+
+.wrapper {
+	margin: 40px;
+	border: 3px solid green;
+	padding: 50px 40px;
+}
+
+header {
+	text-align: center;
+}
+
+header h1 {
+	font-style: italic;
+	font-size: 40px;
+	color: white;
+	display: block;
+}
+
+header nav ul {
+	margin: 40px 0;
+	font-size: 0;
+}
+
+header nav li {
+	display: inline;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+.about {
+	padding-right: 7px;
+	border-right: 1px solid gray;
+}
+
+.portfolio {
+	padding-left: 7px;
+	color: green;
+	border-left: 1px solid gray;
+}
+
+section {
+	color: white;
+}
+
+section h2 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+section p {
+	margin-top: 20px;
+	line-height: 1.4;
+}
+
+section img {
+	float: right;
+	height: 150px;
+	width: 300px;
+}
+
+footer {
+	margin-top: 40px;
+	text-align: center;
+}
+
+footer ul {
+	font-size: 0;
+}
+
+footer li {
+	color: green;
+	font-size: 20px;
+	display: inline;
+	padding: 0 7px;
+
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
+
+footer li:first-child {
+	border-left: 0;
+}
+
+footer li:last-child {
+	border-right: 0;
+}
