@@ -2,68 +2,45 @@ a {
 	text-decoration: none;
 }
 
-.header {
-	height: 40px;
-	background-color: black;
-	color: white;
+header {
+	width: 100%;
+	display: flex;
 }
 
-.header nav {
-	height: 100%;
-	display: inline-block;
+header ul {
+	display: flex;
 }
 
-.nav-item:last-child {
-	border-right: 1px solid white;
+.welcome {
+	width: 100%;
+	display: flex;
 }
 
-.nav-item:first-child {
-	border-left: none;
-	padding: 0 20px;
+.welcome>h2 {
+	margin-right: auto;
 }
 
-.nav-item .logo {
-	position: relative;
-	top: 4px;
+.promo {
+	display: flex;
 }
 
-.logo > span{
-	background-color: white;
-	color: black;
-	font-size: 30px;
-	padding: 0 5px;
+.promo-inner-wrapper {
+	flex-basis: 50%;
 }
 
-.header ul {
-	display: inline-block;
-	position: relative;
-	height: 100%;
-	font-size: 0;
+.promo-inner-news {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.nav-item {
-	display: inline-block;
-	font-size: 16px;
-	border-left: 1px solid white;
-	padding: 12px 20px;
-	text-align: center;
+.promo-inner-news>* {
+	flex: 1 1 50%;
 }
 
-.header input {
-	float: right;
-	width: 170px;
-	margin-top: 6px;
-	margin-right: 10px;
-	height: 20px;
+.news-inner-wrapper {
+	display: flex;
 }
 
-.nav-item.signin {
-	text-align: left;
-	width: 110px;
+.news-inner-wrapper>* {
+	flex: 1 1 33%;
 }
-
-.nav-item.more {
-	width: 90px;
-	text-align: left;
-}
-
