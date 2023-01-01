@@ -1,12 +1,25 @@
+body>*>* {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
 a {
 	text-decoration: none;
 }
 
 header {
-	width: 100%;
+	height: 64px;
+	background: black;
+	color: white;
+}
+
+.header-inner-wrapper {
 	display: flex;
 }
 
+.logo {
+	width: 120px;
+}
 header ul {
 	display: flex;
 }
