@@ -1,8 +1,14 @@
+
+body {
+	font-size: 62.5%;
+}
+
 body>*>* {
 	max-width: 1280px;
 	width: 100%;
 	margin: 0 auto;
 }
+
 a {
 	text-decoration: none;
 }
@@ -11,17 +17,37 @@ header {
 	height: 64px;
 	background: black;
 	color: white;
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
+}
+
+.header-inner-wrapper > * {
+	display: flex;
+	align-items: center;
 }
 
 .header-inner-wrapper {
 	display: flex;
+	justify-content: space-between;
+}
+
+.header-inner-wrapper ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 
 .logo {
 	width: 120px;
 }
+
 header ul {
 	display: flex;
+}
+
+.signin {
+	width: 150px;
 }
 
 .welcome {
@@ -56,4 +82,10 @@ header ul {
 
 .news-inner-wrapper>* {
 	flex: 1 1 33%;
+}
+
+@media screen and (max-width:1280px) {
+	body>*>* {
+		margin: 0 1rem;
+	}
 }
