@@ -4,12 +4,12 @@ a {
 
 body {
 	font-size: 62.5%;
-	max-width: 1280px;
+	max-width: 1170px;
 	margin: 0 auto;
 }
 
 .wrapper {
-	padding: 0.5rem 3rem;
+	padding: 0 3rem;
 }
 
 header, 
@@ -23,6 +23,29 @@ header nav ul,
 	align-items: center;
 }
 
+.logo {
+	font-size: 1.25rem;
+}
+
+.courses {
+	flex-grow: 1;
+}
+
+.courses input {
+	padding: 0;
+	border: 0;
+	background-color: rgba(211, 211, 211, 0.25);
+	height: 40px;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 1;
+}
+
 
 header {
 	height: 60px;
@@ -33,18 +56,106 @@ header {
 	font-weight: bold;
 }
 
-header nav {
-	width: 20%;
+header nav li{
+	margin-left: 1.2rem;
+}
+
+header nav li:first-of-type {
+	margin-left: 0;
 }
 
 header nav ul{
-	width: 100%;
 	flex-direction: row;
-	justify-content: space-between
 }
 
-@media screen and (max-width: 1139px) {
-	/* body {
-		margin: 0 1.25rem;
-	} */
+.hero {
+	display: flex;
+
+}
+
+.hero-image {
+	width: 451px;
+}
+
+.hero-content {
+	margin-left: 1.5rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hero-content h1 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 2rem;
+}
+
+.hero-content h1 span {
+	position: relative;
+}
+
+.hero-content h1 span::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	top: 85%;
+	left: 0;
+	border: 1px solid lightblue;
+}
+
+.hero-content p {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.1rem;
+}
+
+.hero-content ul {
+	display: flex;
+}
+
+.hero-content ul {
+	flex-basis: 25%;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-size: 1rem;
+}
+
+.hero-content ul li a {
+	color: white;
+}
+
+.hero-content ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(100, 100, 255);
+	height: 40px;
+	width: 23%;
+	border-radius: 3px;
+}
+
+.hero-content ul li:last-of-type {
+	display: none;
+}
+
+@media screen and (max-width: 1025px) {
+	.hero-content ul li {
+		display: none;
+		width: auto;
+		padding: 0 .8rem;
+	}
+
+	.hero-content ul li:last-of-type {
+		display: flex;
+	}
+
+	.hero-image {
+		width: 40vmax;
+		height: 100%;
+	}
+	
+	.hero-content p {
+		font-size: 0.9rem;
+	}
 }
